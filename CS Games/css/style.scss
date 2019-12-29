@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: url('/img/cursor.gif'),auto;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+
+
+
+h1,h2,h3,h4,h5{
+    color:#fff;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.login-menu{
+    background-color: rgba(255,255,255,0.6);
+    top:20%;
+    left:40%;
+    right:40%;
+    position: absolute;
+    width: 250px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.1);
+  
+}
+
+.login-area h2{
+    text-align: center;
+    font-size: 50px;
+    color:#1DE9B6;
+}
+
+.login-area h4{
+    text-align: center;
+    font-size: 14px;
+    margin-top: -18px;
+    color:#E0E0E0;
+}
+
+.login-area label{
+    color:#E0E0E0;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-left: -130px;
+    font-size: 12px;
+}
+
+.login-area{
+   text-align: center;
+}
+
+.login-area button{
+    margin: 20px;
+    width: 160px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color:#1DE9B6;
+    border: none;
+    color: #fff;
+    padding: 6px;
+    transform: 2s;
+    transition-duration: 3s;
+}
+
+.login-area button:hover{
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.3);  
+    box-shadow: inset 0 0 15px #fff;
+}
+
+.login-area button::before{
+    content:'';
+    background-color: rgba(34, 243, 215, 0.315);
+    padding:7px;
+    padding-right: 0px;
+    width: 0px;
+    position: absolute;
+    left: 45px;
+    height: 38px;
+    top: 77%;
+    animation: light 3s infinite linear;
+    animation-timing-function: ease-in-out;
+}
+//button glow aniamtion
+@keyframes light{
+    0%{
+      width: 0px; opacity: 0;
+    }
+    90%{ width: 160px; opacity: 1;}
+
+    100%{ width: 160px; opacity: 0;}
+}
+
+.login-area input{
+   background-color:  rgba(29, 233, 182,0.3);
+   padding-left: 14px;
+   border: 2px solid #fff;
+   color:#fff;
+   transition: 3s;
+   transition-duration: 2s;
+   font-size: 12px;
+ }
+
+ 
+.login-area input:focus{
+    background-color:  rgba(29, 233, 182,0.9);
+    box-shadow: inset 0 0 10px #fff;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.1), 5px 5px 12px rgba(0,0,0,0.1);
+    border: 2px solid rgba(128, 222, 234,0.1);
+    animation: borderglow 2s infinite;
+  }
+
+//glow animation 
+
+@keyframes borderglow{
+    0%{ border: 2px solid rgba(255, 255, 255,0.8);}
+    50% { border: 2px solid rgba(0, 229, 255,0.8); box-shadow: inset 0 0 40px rgba(0, 229, 255,1);}
+    100% { border: 2px solid rgba(118, 255, 3,0.8);}
+
+}
+
+//prepend icon 
+
+ .icon{
+     background-color: rgba(29, 233, 182);
+     padding: 5px;
+     box-shadow: 5px 5px 12px rgba(0,0,0,0.1), 5px 5px 12px rgba(0,0,0,0.1);
+     margin-left: 10px;
+     border: 2px solid #fff;
+ }
+
+ .icon img{
+     height: 20px;
+     width: 20px;
+ }
+
+ .logo img{
+    height: 40px;
+    width: 40px;
+ }
+
+ //end of prepend icon
+ input::placeholder{
+     margin-left: 8px;
+     color:#fff;
+     font-size: 12px;
+ }
+
+ .forgotpass a:hover{
+    text-decoration: none;
+    color:#1DE9B6;
+ }
+
+ .forgotpass a{
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: 'Ubuntu Mono', monospace;
+    color:#E0E0E0;
+    margin-left: 100px;
+ }
+
+.nav h3{
+    left: 10px;
+    padding: 10px;
+}
+
+.title h3{
+    padding: 10px;
+    left: 10px;
+    position: absolute;
+
+}
+
+.nav li{
+    text-align: center;
+    padding:10px;
+    border: 1px solid #e0e0e0;
+}
